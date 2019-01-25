@@ -1076,19 +1076,7 @@ label {
 select,
 textarea,
 input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"],
+input[type="notation"],
 .uneditable-input {
   display: inline-block;
   height: 20px;
@@ -1128,6 +1116,7 @@ input[type="url"],
 input[type="search"],
 input[type="tel"],
 input[type="color"],
+input[type="notation"],
 .uneditable-input {
   background-color: #ffffff;
   border: 1px solid #cccccc;
@@ -1155,6 +1144,7 @@ input[type="url"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
+input[type="notation"]:focus,
 .uneditable-input:focus {
   border-color: rgba(82, 168, 236, 0.8);
   outline: 0;
