@@ -92,20 +92,12 @@ var jsKeyboard = {
 
     },
     changeToSmallLetter: function() {
-        $("#keyboardCapitalLetter,#keyboardNumber,#keyboardSymbols").css("display", "none");
+        $("#keyboardNumber").css("display", "none");
         $("#keyboardSmallLetter").css("display", "block");
-    },
-    changeToCapitalLetter: function() {
-        $("#keyboardCapitalLetter").css("display", "block");
-        $("#keyboardSmallLetter,#keyboardNumber,#keyboardSymbols").css("display", "none");
     },
     changeToNumber: function() {
         $("#keyboardNumber").css("display", "block");
-        $("#keyboardSymbols,#keyboardCapitalLetter,#keyboardSmallLetter").css("display", "none");
-    },
-    changeToSymbols: function() {
-        $("#keyboardCapitalLetter,#keyboardNumber,#keyboardSmallLetter").css("display", "none");
-        $("#keyboardSymbols").css("display", "block");
+        $("#keyboardSmallLetter").css("display", "none");
     },
     updateCursor: function()
     {
