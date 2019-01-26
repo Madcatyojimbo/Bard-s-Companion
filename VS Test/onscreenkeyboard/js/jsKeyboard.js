@@ -67,13 +67,6 @@ var jsKeyboard = {
         });
         s += "</div>";
 
-        /*symbols*/
-        s += "<div id=\"keyboardSymbols\">";
-        $.each(jsKeyboard.keyboard[keyboard].symbols, function(i, key) {
-            generate(key);
-        });
-        s += "</div>";
-
         function generate(key) {
             bClass = key.buttonClass == undefined ? jsKeyboard.settings.buttonClass : key.buttonClass;
             kClass = key.keyClass == undefined ? jsKeyboard.settings.keyClass : key.keyClass;

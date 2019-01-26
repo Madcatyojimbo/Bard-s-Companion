@@ -72,15 +72,6 @@ var jsKeyboard = {
         });
         s += "</table>";
 
-        /*symbols*/
-        s += "<table id=\"keyboardSymbols\">";
-        $.each(jsKeyboard.keyboard[keyboard].symbols, function () {
-            s += "<tr class=\"jsKeyboardRow\">";
-            $(this).each(function (i, key) { generate(key); });
-            s += "</tr>";
-        });
-        s += "</table>";
-
         function generate(key) {
             bClass = key.buttonClass == undefined ? jsKeyboard.settings.buttonClass : key.buttonClass;
             kClass = key.keyClass == undefined ? jsKeyboard.settings.keyClass : key.keyClass;
